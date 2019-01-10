@@ -43,12 +43,15 @@ while mailLoop:
             tweetImageURL = tweetText["entities"]["media"][0]["media_url"]
             twitterImage = requests.get(tweetImageURL)
             open("PromoCodes.jpg", 'wb').write(twitterImage.content)
+            print("Tweet is Promo Tweet")
 
             # Runs tesseract
             os.system("tesseract PromoCodes.jpg PromoCodesText")
+            print("Performing OCR")
 
             # Waits for the text file to be created
             while OCRLooper:
+                print("Waiting for OCR to complete")
                 if os.path.isfile("Promocodes.txt"):
                     PromoCodesText = open(
                         "PromoCodesText.txt", 'r').read().split()
