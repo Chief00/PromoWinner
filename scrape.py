@@ -29,10 +29,11 @@ mailLoop = True
 while mailLoop:
     # Gets tweet from twitter
     tweet = userTweets("sam_beckman", 1)
-
+    print("Tweet Collected")
     # Checks to see if its a new tweet
     if tweet["id"] != oldTweetID:
         oldTweetID = tweet["id"]
+        print("New Tweet")
 
         # Creates variable of the text in tweet
         tweetText = tweet["text"]
