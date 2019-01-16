@@ -1,0 +1,294 @@
+Traceback (most recent call last):
+  File "scrape.py", line 1, in <module>
+    import tweepy
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/__init__.py", line 14, in <module>
+    from tweepy.api import API
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/api.py", line 12, in <module>
+    from tweepy.binder import bind_api
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 11, in <module>
+    import requests
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/__init__.py", line 44, in <module>
+    import chardet
+  File "/home/pi/.local/lib/python3.5/site-packages/chardet/__init__.py", line 20, in <module>
+    from .universaldetector import UniversalDetector
+  File "/home/pi/.local/lib/python3.5/site-packages/chardet/universaldetector.py", line 48, in <module>
+    from .sbcsgroupprober import SBCSGroupProber
+  File "/home/pi/.local/lib/python3.5/site-packages/chardet/sbcsgroupprober.py", line 34, in <module>
+    from .langgreekmodel import Latin7GreekModel, Win1253GreekModel
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 954, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 888, in _find_spec
+  File "<frozen importlib._bootstrap>", line 854, in __enter__
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "scrape.py", line 32, in <module>
+    logging.basicConfig(filename='tweetOutput.log', level=logging.info)
+  File "/usr/lib/python3.5/logging/__init__.py", line 1763, in basicConfig
+    root.setLevel(level)
+  File "/usr/lib/python3.5/logging/__init__.py", line 1256, in setLevel
+    self.level = _checkLevel(level)
+  File "/usr/lib/python3.5/logging/__init__.py", line 191, in _checkLevel
+    raise TypeError("Level not an integer or a valid string: %r" % level)
+TypeError: Level not an integer or a valid string: <function info at 0xb65f5540>
+Traceback (most recent call last):
+  File "scrape.py", line 32, in <module>
+    logging.basicConfig(filename='tweetOutput.log', level=logging.info)
+  File "/usr/lib/python3.5/logging/__init__.py", line 1763, in basicConfig
+    root.setLevel(level)
+  File "/usr/lib/python3.5/logging/__init__.py", line 1256, in setLevel
+    self.level = _checkLevel(level)
+  File "/usr/lib/python3.5/logging/__init__.py", line 191, in _checkLevel
+    raise TypeError("Level not an integer or a valid string: %r" % level)
+TypeError: Level not an integer or a valid string: <function info at 0xb664c540>
+Traceback (most recent call last):
+  File "scrape.py", line 32, in <module>
+    logging.basicConfig(filename='tweetOutput.log', level=logging.info)
+  File "/usr/lib/python3.5/logging/__init__.py", line 1763, in basicConfig
+    root.setLevel(level)
+  File "/usr/lib/python3.5/logging/__init__.py", line 1256, in setLevel
+    self.level = _checkLevel(level)
+  File "/usr/lib/python3.5/logging/__init__.py", line 191, in _checkLevel
+    raise TypeError("Level not an integer or a valid string: %r" % level)
+TypeError: Level not an integer or a valid string: <function info at 0xb6644540>
+Traceback (most recent call last):
+  File "scrape.py", line 32, in <module>
+    logging.basicConfig(filename='tweetOutput.log', level=logging.info)
+  File "/usr/lib/python3.5/logging/__init__.py", line 1763, in basicConfig
+    root.setLevel(level)
+  File "/usr/lib/python3.5/logging/__init__.py", line 1256, in setLevel
+    self.level = _checkLevel(level)
+  File "/usr/lib/python3.5/logging/__init__.py", line 191, in _checkLevel
+    raise TypeError("Level not an integer or a valid string: %r" % level)
+TypeError: Level not an integer or a valid string: <function info at 0xb65d5540>
+Traceback (most recent call last):
+  File "scrape.py", line 32, in <module>
+    logging.basicConfig(filename='tweetOutput.log', level=logging.info)
+  File "/usr/lib/python3.5/logging/__init__.py", line 1763, in basicConfig
+    root.setLevel(level)
+  File "/usr/lib/python3.5/logging/__init__.py", line 1256, in setLevel
+    self.level = _checkLevel(level)
+  File "/usr/lib/python3.5/logging/__init__.py", line 191, in _checkLevel
+    raise TypeError("Level not an integer or a valid string: %r" % level)
+TypeError: Level not an integer or a valid string: <function info at 0xb666a540>
+  File "scrape.py", line 67
+    logging.info(str(datetime.now().time()) + " Notification sent")
+                                                                  ^
+TabError: inconsistent use of tabs and spaces in indentation
+  File "scrape.py", line 67
+    logging.info(str(datetime.now().time()) + " Notification sent")
+                                                                  ^
+TabError: inconsistent use of tabs and spaces in indentation
+  File "scrape.py", line 67
+    logging.info(str(datetime.now().time()) + " Notification sent")
+                                                                  ^
+TabError: inconsistent use of tabs and spaces in indentation
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.5/socket.py", line 733, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0xb60d8ab0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/user_timeline.json?count=1&id=sam_beckman (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb60d8ab0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 190, in execute
+    proxies=self.api.proxy)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/user_timeline.json?count=1&id=sam_beckman (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb60d8ab0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "scrape.py", line 36, in <module>
+    tweet = userTweets("sam_beckman", 1)
+  File "scrape.py", line 23, in userTweets
+    userTweet = API.user_timeline(user, count=ntweets)[0]
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 250, in _call
+    return method.execute()
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 192, in execute
+    six.reraise(TweepError, TweepError('Failed to send request: %s' % e), sys.exc_info()[2])
+  File "/home/pi/.local/lib/python3.5/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 190, in execute
+    proxies=self.api.proxy)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+tweepy.error.TweepError: Failed to send request: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/user_timeline.json?count=1&id=sam_beckman (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb60d8ab0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.5/socket.py", line 733, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0xb6270a50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/user_timeline.json?id=sam_beckman&count=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb6270a50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 190, in execute
+    proxies=self.api.proxy)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/user_timeline.json?id=sam_beckman&count=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb6270a50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "scrape.py", line 36, in <module>
+    tweet = userTweets("sam_beckman", 1)
+  File "scrape.py", line 23, in userTweets
+    userTweet = API.user_timeline(user, count=ntweets)[0]
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 250, in _call
+    return method.execute()
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 192, in execute
+    six.reraise(TweepError, TweepError('Failed to send request: %s' % e), sys.exc_info()[2])
+  File "/home/pi/.local/lib/python3.5/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 190, in execute
+    proxies=self.api.proxy)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+tweepy.error.TweepError: Failed to send request: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/user_timeline.json?id=sam_beckman&count=1 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb6270a50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connection.py", line 159, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw)
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/util/connection.py", line 57, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.5/socket.py", line 733, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 600, in urlopen
+    chunked=chunked)
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 343, in _make_request
+    self._validate_conn(conn)
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 839, in _validate_conn
+    conn.connect()
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connection.py", line 301, in connect
+    conn = self._new_conn()
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connection.py", line 168, in _new_conn
+    self, "Failed to establish a new connection: %s" % e)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.VerifiedHTTPSConnection object at 0xb6131a50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/connectionpool.py", line 638, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/pi/.local/lib/python3.5/site-packages/urllib3/util/retry.py", line 398, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/user_timeline.json?count=1&id=sam_beckman (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb6131a50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 190, in execute
+    proxies=self.api.proxy)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/user_timeline.json?count=1&id=sam_beckman (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb6131a50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "scrape.py", line 36, in <module>
+    tweet = userTweets("sam_beckman", 1)
+  File "scrape.py", line 23, in userTweets
+    userTweet = API.user_timeline(user, count=ntweets)[0]
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 250, in _call
+    return method.execute()
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 192, in execute
+    six.reraise(TweepError, TweepError('Failed to send request: %s' % e), sys.exc_info()[2])
+  File "/home/pi/.local/lib/python3.5/site-packages/six.py", line 692, in reraise
+    raise value.with_traceback(tb)
+  File "/home/pi/.local/lib/python3.5/site-packages/tweepy/binder.py", line 190, in execute
+    proxies=self.api.proxy)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/pi/.local/lib/python3.5/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+tweepy.error.TweepError: Failed to send request: HTTPSConnectionPool(host='api.twitter.com', port=443): Max retries exceeded with url: /1.1/statuses/user_timeline.json?count=1&id=sam_beckman (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0xb6131a50>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))
