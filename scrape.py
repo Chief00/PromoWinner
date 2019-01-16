@@ -33,7 +33,11 @@ logging.basicConfig(filename='tweetOutput.log', level=logging.INFO)
 
 while mailLoop:
     # Gets tweet from twitter
-    tweet = userTweets("sam_beckman", 1)
+    try:
+        tweet = userTweets("sam_beckman", 1)
+    except:
+        time.sleep(60 * 10)
+
     logging.info(str(datetime.now().time()) + " Tweet Collected")
     # Checks to see if its a new tweet
     if tweet["id"] != oldTweetID:
@@ -56,7 +60,8 @@ while mailLoop:
 
             # Waits for the text file to be created
             while OCRLooper:
-                logging.info(str(datetime.now().time()) + " Waiting for OCR to complete")
+                logging.info(str(datetime.now().time()) +
+                             " Waiting for OCR to complete")
                 if os.path.isfile("Promocodes.txt"):
                     PromoCodesText = open(
                         "PromoCodesText.txt", 'r').read().split()
@@ -64,7 +69,8 @@ while mailLoop:
                     for i in range(1, len(PromoCodesText) - 1):
                         os.system(
                             "curl -u o.HKHTPzhnlx9AsQuDtOicBXAlqaZAkseV:poppy12 https://api.pushbullet.com/v2/pushes -d type=note -d title=\"Promo Codes\" -d body=" + str(PromoCodesText[i]))
-                        logging.info(str(datetime.now().time()) + " Notification sent")
+                        logging.info(str(datetime.now().time()) +
+                                     " Notification sent")
                 OCRLooper = False
                 mailLoop = False
     time.sleep(10)
