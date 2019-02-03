@@ -49,7 +49,7 @@ while mailLoop:
 
         # Checks if text is about KLCK promo code and downloads the image
         if "promo" and "KLCK" in tweetText:
-            tweetImageURL = tweetText["entities"]["media"][0]["media_url"]
+            tweetImageURL = tweet["entities"]["media"][0]["media_url"]
             twitterImage = requests.get(tweetImageURL)
             open("PromoCodes.jpg", 'wb').write(twitterImage.content)
             logging.info(str(datetime.now().time()) + " Tweet is Promo Tweet")
