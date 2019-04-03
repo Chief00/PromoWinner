@@ -68,7 +68,7 @@ while mailLoop:
                     # loops through items in list and send a notification
                     for line in PromoCodesText:
                         os.system(
-                            "curl -u o.HKHTPzhnlx9AsQuDtOicBXAlqaZAkseV:poppy12 https://api.pushbullet.com/v2/pushes -d type=note -d title=\"Promo Codes\" -d body=" + str(PromoCodesText[i]))
+                            "curl -u o.HKHTPzhnlx9AsQuDtOicBXAlqaZAkseV:poppy12 https://api.pushbullet.com/v2/pushes -d type=note -d title=\"Promo Codes\" -d body=" + str(PromoCodesText[line]))
                         logging.info(str(datetime.now().time()) +
                                      " Notification sent")
                 OCRLooper = False
