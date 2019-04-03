@@ -20,13 +20,13 @@ API = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 
 def userTweets(user, ntweets):
     # Getting last tweet from user
-    userTweet = API.user_timeline(user, count=ntweets)[0]
+    userTweet = API.user_timeline(user, count=ntweets, tweet_mode='extended')[0]
     return userTweet
 
 
 # Inputs tweet into variable creates variable oldTweetID
 
-oldTweetID = '1083198705275002880'
+oldTweetID = '1101356836081491969'
 OCRLooper = True
 mailLoop = True
 logging.basicConfig(filename='tweetOutput.log', level=logging.INFO)
@@ -48,7 +48,7 @@ while mailLoop:
         tweetText = tweet["text"]
 
         # Checks if text is about KLCK promo code and downloads the image
-        if "Memoria" in tweetText:
+        if "promo code" in tweetText:
             tweetImageURL = tweet["entities"]["media"][0]["media_url"]
             twitterImage = requests.get(tweetImageURL)
             open("PromoCodes.jpg", 'wb').write(twitterImage.content)
@@ -66,7 +66,7 @@ while mailLoop:
                     PromoCodesText = open(
                         "PromoCodesText.txt", 'r').read().split()
                     # loops through items in list and send a notification
-                    for i in range(1, len(PromoCodesText) - 1):
+                    for line in PromoCodesText:
                         os.system(
                             "curl -u o.HKHTPzhnlx9AsQuDtOicBXAlqaZAkseV:poppy12 https://api.pushbullet.com/v2/pushes -d type=note -d title=\"Promo Codes\" -d body=" + str(PromoCodesText[i]))
                         logging.info(str(datetime.now().time()) +
