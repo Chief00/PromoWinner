@@ -45,7 +45,7 @@ while mailLoop:
         logging.info(str(datetime.now().time()) + " New Tweet")
 
         # Creates variable of the text in tweet
-        tweetText = tweet["text"]
+        tweetText = tweet["full_text"]
 
         # Checks if text is about KLCK promo code and downloads the image
         if "promo code" in tweetText:
